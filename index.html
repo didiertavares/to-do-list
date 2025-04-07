@@ -3,21 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do list | Didier</title>
     <title>Lista de Tarefas</title>
 </head>
 <body>
     <h1>LISTA DE TAREFAS</h1>
-    <ol>
-        <li id="nexttask"></li>
-        <li>task 2</li>
-        <form>
-            <label for="fname">Próxima tarefa:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-        </form>
-        <button type="button" onclick="adicioneTarefa">acrescentar tarefa à lista!</button>
-    </ol>
-    <h1>TAREFAS</h1>
     <ul>
         <li>task1</li>
         <li>task2</li>
@@ -26,14 +15,8 @@
     <button onclick=""addtarefa">Qual a próxima tarefa?</button>
     <input type="text">
     <script>
-        const tarefas = ["estudar"]
         const ul = document.querySelector("ul")
-        const input = document.querySelector("input")
-        
-        function adicioneTarefa()   {
-            const inputvalor = document.querySelector("fname")
-            inputvalor
-            document.createinnerText(inputvalue) = tarefas
+        const input = document.querySelector("input")        
         function addtarefa()    {
             const li = document.createElement("li")
             const novatarefa = input.value
@@ -41,9 +24,6 @@
             ul.appendChild(li)
             input.value = ""
         }
-
-
-
     </script>
 </body>
 </html>
