@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do list | Didier</title>
+    <title>Lista de Tarefas</title>
 </head>
 <body>
     <h1>LISTA DE TAREFAS</h1>
@@ -16,13 +17,29 @@
         </form>
         <button type="button" onclick="adicioneTarefa">acrescentar tarefa à lista!</button>
     </ol>
+    <h1>TAREFAS</h1>
+    <ul>
+        <li>task1</li>
+        <li>task2</li>
+        <li>task3</li>
+    </ul>
+    <button onclick=""addtarefa">Qual a próxima tarefa?</button>
+    <input type="text">
     <script>
         const tarefas = ["estudar"]
+        const ul = document.querySelector("ul")
+        const input = document.querySelector("input")
         
         function adicioneTarefa()   {
             const inputvalor = document.querySelector("fname")
             inputvalor
             document.createinnerText(inputvalue) = tarefas
+        function addtarefa()    {
+            const li = document.createElement("li")
+            const novatarefa = input.value
+            li.innertext(novatarefa)
+            ul.appendChild(li)
+            input.value = ""
         }
 
 
