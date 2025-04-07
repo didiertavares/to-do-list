@@ -12,15 +12,17 @@
         <li>task2</li>
         <li>task3</li>
     </ul>
-    <button onclick=""addtarefa">Qual a próxima tarefa?</button>
-    <input type="text">
+    <button onclick="addtarefa()">Qual a próxima tarefa?</button>
+    <input>
     <script>
-        const ul = document.querySelector("ul")
-        const input = document.querySelector("input")        
+        
         function addtarefa()    {
-            const li = document.createElement("li")
+            const ul = document.querySelector("ul")
+            const input = document.querySelector("input")
             const novatarefa = input.value
-            li.innertext(novatarefa)
+            const li = document.createElement("li")
+            li.innerText = novatarefa
+            console.log(li)
             ul.appendChild(li)
             input.value = ""
         }
