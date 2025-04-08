@@ -8,23 +8,22 @@
 <body>
     <h1>LISTA DE TAREFAS</h1>
     <ul>
-        <li>task1</li>
-        <li>task2</li>
-        <li>task3</li>
     </ul>
     <button onclick="addtarefa()">Qual a próxima tarefa?</button>
     <input>
     <script>
-        
+
         function addtarefa()    {
             const ul = document.querySelector("ul")
             const input = document.querySelector("input")
             const novatarefa = input.value
             const li = document.createElement("li")
             li.innerText = novatarefa
-            console.log(li)
             ul.appendChild(li)
             input.value = ""
+
+
+            //console.log(li)
         }
     </script>
 </body>
